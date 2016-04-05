@@ -1,0 +1,15 @@
+{
+  "name": "tern-jsx",
+  "main": "jsx",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "dependencies": {
+    "acorn": "^3.0.4",
+    "acorn-jsx": "^3.0.0",
+    "tern": "^0.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0"
+  }
+}
