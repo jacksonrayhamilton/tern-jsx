@@ -48,6 +48,7 @@
     acornJSXWalk(infer.searchVisitor);
     acornJSXWalk(infer.fullVisitor);
     acornJSXWalk(infer.refFindWalker);
+    acornJSXWalk(infer.simpleWalker);
 
     // Allow renaming variables used in JSX.
     infer.refFindWalker.JSXIdentifier = function () {

@@ -2,7 +2,9 @@
   "name": "tern-jsx",
   "main": "jsx",
   "scripts": {
-    "test": "eslint ."
+    "lint": "eslint .",
+    "test": "npm run lint && npm run unit",
+    "unit": "mocha"
   },
   "dependencies": {
     "acorn": "^3.0.4",
@@ -10,6 +12,8 @@
     "tern": "^0.18.0"
   },
   "devDependencies": {
-    "eslint": "^2.7.0"
+    "eslint": "^2.7.0",
+    "lodash": "^4.9.0",
+    "mocha": "^2.4.5"
   }
 }
