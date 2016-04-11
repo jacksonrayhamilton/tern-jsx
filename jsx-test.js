@@ -1,13 +1,15 @@
+/* eslint-env mocha, node */
+
 'use strict';
 
 var assert = require('assert');
 var defaults = require('lodash/defaults');
 var flatten = require('lodash/flatten');
 var path = require('path');
-var jsx = require('../jsx');
+var jsx = require('./jsx');
 var tern = require('tern');
 
-var ternDir = path.resolve(__dirname, '../node_modules/tern');
+var ternDir = path.resolve(__dirname, 'node_modules/tern');
 
 describe('jsx', function () {
 
