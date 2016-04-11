@@ -7,13 +7,15 @@
     "unit": "mocha '*-test.js'"
   },
   "dependencies": {
-    "acorn": "^3.0.4",
-    "acorn-jsx": "^3.0.0",
-    "tern": "^0.18.0"
+    "acorn-jsx": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^2.7.0",
     "lodash": "^4.9.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "tern": "^0.18.0"
+  },
+  "peerDependencies": {
+    "tern": "^0.18.0"
   }
 }
