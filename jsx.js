@@ -42,14 +42,6 @@
     acornJSX(acorn);
     acornJSXWalk(walk.base);
 
-    // Patch the vistor objects Tern uses to tolerate JSX.
-    acornJSXWalk(infer.scopeGatherer);
-    acornJSXWalk(infer.inferWrapper);
-    acornJSXWalk(infer.searchVisitor);
-    acornJSXWalk(infer.fullVisitor);
-    acornJSXWalk(infer.refFindWalker);
-    acornJSXWalk(infer.simpleWalker);
-
     // Allow renaming variables used in JSX.
     infer.refFindWalker.JSXIdentifier = function () {
       // Identifier is defined ad-hoc, so call the latest instance.
