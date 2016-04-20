@@ -43,10 +43,12 @@
     acornJSXWalk(walk.base);
 
     // Allow renaming variables used in JSX.
-    infer.refFindWalker.JSXIdentifier = function () {
-      // Identifier is defined ad-hoc, so call the latest instance.
-      var walker = infer.refFindWalker;
-      return walker.Identifier.apply(walker, arguments);
+    infer.searchVisitor.JSXIdentifier = function () {
+      // Identifier is defined ad-hoc, so call the latest instance.  Using
+      // `this` is risky because the callee could be detached.  However, at
+      // present, Tern only passes this visitor and its descendants to `walk`
+      // methods which preserve the context.
+      return this.Identifier.apply(this, arguments);
     };
 
     // Allow finding the definition, type and docs of a JSXIdentifier.
