@@ -1,5 +1,6 @@
 {
   "name": "tern-jsx",
+  "version": "0.0.0",
   "main": "jsx",
   "scripts": {
     "lint": "eslint .",
