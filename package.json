@@ -1,7 +1,10 @@
 {
   "name": "tern-jsx",
+  "description": "Tern plugin adding JSX support",
   "version": "1.0.0",
   "main": "jsx",
+  "repository": "github:jacksonrayhamilton/tern-jsx",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "test": "npm run lint && npm run unit",
