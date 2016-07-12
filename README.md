@@ -1,4 +1,4 @@
-# tern-jsx
+# tern-jsx [![Build Status](https://travis-ci.org/jacksonrayhamilton/tern-jsx.svg?branch=master)](https://travis-ci.org/jacksonrayhamilton/tern-jsx)
 
 Add JSX support to Tern.
 
