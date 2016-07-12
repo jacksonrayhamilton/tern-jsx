@@ -8,13 +8,6 @@ improves other plugins' compatibility with JSX.
 
 [`acorn-jsx`]: https://github.com/RReverser/acorn-jsx
 
-## Requirements
-
-Requires a version of Tern after commit [b4bd2fc][] (i.e., `> 0.18.0`), as Acorn
-must be up-to-date for this plugin to work correctly.
-
-[b4bd2fc]: https://github.com/ternjs/tern/commit/b4bd2fcd9fc62dba18d982f84b31ccbb4273a31b
-
 ## Installation
 
 Install the npm package globally:
