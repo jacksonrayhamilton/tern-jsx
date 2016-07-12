@@ -5,11 +5,11 @@
   if (typeof module === 'object' && module.exports) { // CommonJS
     exports.initialize = function (ternDir) {
       /* eslint-disable global-require */
-      var path = require('path');
-      mod(require(path.resolve(ternDir, 'lib/infer')),
-          require(path.resolve(ternDir, 'lib/tern')),
-          require(path.resolve(ternDir, 'node_modules/acorn/dist/acorn')),
-          require(path.resolve(ternDir, 'node_modules/acorn/dist/walk')),
+      var resolveFrom = require('resolve-from');
+      mod(require(resolveFrom(ternDir, './lib/infer')),
+          require(resolveFrom(ternDir, './lib/tern')),
+          require(resolveFrom(ternDir, 'acorn/dist/acorn')),
+          require(resolveFrom(ternDir, 'acorn/dist/walk')),
           require('acorn-jsx/inject'),
           require('./inject'));
       /* eslint-enable global-require */

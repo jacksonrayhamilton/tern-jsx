@@ -11,7 +11,8 @@
     "unit": "mocha '*-test.js'"
   },
   "dependencies": {
-    "acorn-jsx": "^3.0.0"
+    "acorn-jsx": "^3.0.0",
+    "resolve-from": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^2.7.0",
