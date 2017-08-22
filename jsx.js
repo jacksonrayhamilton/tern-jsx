@@ -17,12 +17,17 @@
     return;
   }
   if (typeof define === 'function' && define.amd) { // AMD
-    define(['tern/lib/infer',
-            'tern/lib/tern',
-            'acorn/dist/acorn',
-            'acorn/dist/walk',
-            'acorn-jsx/inject',
-            './inject'], mod);
+    define(
+      [
+        'tern/lib/infer',
+        'tern/lib/tern',
+        'acorn/dist/acorn',
+        'acorn/dist/walk',
+        'acorn-jsx/inject',
+        './inject'
+      ],
+      mod
+    );
     return;
   }
   mod(tern, tern, acorn, acorn.walk, acornJSX, acornJSXWalk); // Global
