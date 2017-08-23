@@ -1,7 +1,7 @@
 {
   "name": "tern-jsx",
   "description": "Tern plugin adding JSX support",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "jsx",
   "repository": "github:jacksonrayhamilton/tern-jsx",
   "license": "MIT",
